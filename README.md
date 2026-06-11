@@ -147,8 +147,8 @@ flutter pub get
    - Add `google-services.json` to `/android/app`
 
 4. Set up environment variables:
-   - Copy `.env.asc` and add your keys
-
+   - Create a `.env` file in the project root (do not edit `.env.asc`, it’s an encrypted CI artifact)
+   - Add `API_URL`, `SUPABASE_API_URL`, and `SUPABASE_API_PUBLIC_KEY` values
 5. Run the app:
 ```bash
 flutter run
